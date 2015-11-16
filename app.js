@@ -7,16 +7,34 @@ app.set('view engine', 'ejs');
 //homepage
 app.get('/', function(req, res){
   res.render('default', 
-    {title: 'Home',
+    {title: 'Federico Capaldo | Home',
+     classname: 'home',
      users: ['Jon', 'Jack', 'Lurido', 'Valerio']
     });
 });
 
-app.get('/me', function(req, res){
-  res.send('@algoFed');
+app.get('/about', function(req, res){
+  res.render('default', 
+    {title: 'Federico Capaldo | About me',
+     classname: 'about',
+    });
 });
 
-app.get('/who/:name?', function(req, res){
+app.get('/projects', function(req, res){
+  res.render('default',
+    { title: 'Federico Capaldo | Projects',
+      classname: 'projects'
+    });
+});
+
+app.get('/contact', function(req, res){
+  res.render('default', 
+    { title: 'Federico Capaldo | Contact me',
+      classname: 'contact'
+    });
+});
+
+/* app.get('/who/:name?', function(req, res){
   var username = req.params.name;
   res.render('userPage', {name: username});
 });
@@ -29,7 +47,7 @@ app.get('/who/:name?/:title', function(req, res){
 
 app.get('*', function(req, res){
   res.send('Bad Route');
-});
+}); */
 
 
 var server = app.listen(3000, function(){

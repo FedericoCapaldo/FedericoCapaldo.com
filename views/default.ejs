@@ -1,16 +1,16 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Federico Capaldo | Home</title>
-</head>
-<body>
- <h1><%= title %></h1>
- <p> this website is where I share my ideas. </p>
+<html lang="en">
+  <head><% include partials/page/head.ejs %></head>
+  <body class="<%= classname %>">
 
- <ul>
-   <% for(var i=0; i<users.length; i++) { %>
-     <li> <%= users[i] %> </li>
-   <% } %>
- </ul>
-</body>
+  <% include partials/page/header.ejs %>
+
+    <div class="container"> 
+      <h1>Hello, world!</h1>
+      <p> this website is where I share my ideas. </p>
+      </div> <!-- container -->
+
+  <% include partials/page/footer.ejs %>
+  <% include partials/page/jsdefaults.ejs %>
+  </body>
 </html>
