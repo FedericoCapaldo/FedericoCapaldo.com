@@ -1,40 +1,17 @@
 var express = require ('express');
 var app = express();
+var routes = require('./routes');
 
 // __dirname == global variable where the app.js file is.
 app.set('view engine', 'ejs');
 
 app.locals.myNameTitle = "F Capaldo";
 
-//homepage
-app.get('/', function(req, res){
-  res.render('default', 
-    {title: 'Home',
-     classname: 'home',
-     users: ['Jon', 'Jack', 'Lurido', 'Valerio']
-    });
-});
+app.get('/', routes.home);
+app.get('/about', routes.about);
+app.get('/projects', routes.projects);
+app.get('/contact', routes.contact);
 
-app.get('/about', function(req, res){
-  res.render('default', 
-    {title: 'About me',
-     classname: 'about',
-    });
-});
-
-app.get('/projects', function(req, res){
-  res.render('default',
-    { title: 'Projects',
-      classname: 'projects'
-    });
-});
-
-app.get('/contact', function(req, res){
-  res.render('default', 
-    { title: 'Contact me',
-      classname: 'contact'
-    });
-});
 
 /* app.get('/who/:name?', function(req, res){
   var username = req.params.name;
