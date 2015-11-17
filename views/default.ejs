@@ -4,10 +4,25 @@
     <% include partials/page/head.ejs %>
   </head>
   
-  <body class="<%= classname %>">
+  <body>
 
   <% include partials/page/header.ejs %>
 
+    <div class="container">
+      <% if(title == "About me") { %>
+          <h3>About Me</h3>
+      <% } else if (title == "Projects") { %>
+          <h3>Projects</h3>
+      <% } else if (title == "Contact me") { %>
+          <h3> Contact </h3>
+      <% } else if (title = "Home") { %>
+          <h3>Home</h3>
+          <p>Hi there! I am Federico and this is my website (currently in development).</p>
+          <p>I am a Computer Science Student at King's Collge London! I am doing a lot of activites I am passionate about and soon I'll put everything here online!</p>
+          <br>
+          <p>Stay Tuned!</p>
+      <% } %>
+    </div>
 
   <% include partials/page/footer.ejs %>
   <% include partials/page/jsdefaults.ejs %>

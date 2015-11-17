@@ -11,6 +11,18 @@ body {
   text-align: center;
 }
 
+.header a { 
+  text-decoration: none;
+}
+
+.top a{
+  color: #511f1f;
+}
+
+.navigator {
+  margin-top: 10px;
+}
+
 .navigator ul{
   list-style: none;
   padding-left: 0px;
@@ -18,7 +30,37 @@ body {
 
 .navigator li {
   display: inline-block;
-  margin: 5px;
-  padding: 5px;
-  font-size: 1.5em;
+  margin: 2px;
+  padding: 2px;
+  font-size: 1em;
 }
+
+.navigator a {
+  color: #775f5f;
+}
+
+
+.container {
+  padding-top: 20px;
+  width: 85%;
+}
+
+
+@media (min-width: 482px) {
+  .navigator li {
+    margin: 5px;
+    padding: 5px;
+    font-size: 1.5em;
+  }
+
+  .navigator {
+    margin-top: 50px;
+  }
+
+  .container {
+    margin-left: 25%;
+    margin-right: 25%;
+    width: 50%;
+  }
+}
+
