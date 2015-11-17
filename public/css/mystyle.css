@@ -1,3 +1,24 @@
 body {
-  background-color: red;
+  background-color: #9ae0e0;
+}
+
+
+.header {
+  background-image: url("../images/background.png");
+  background-size: contain;
+  padding: 60px;
+  height: 250px;
+  text-align: center;
+}
+
+.navigator ul{
+  list-style: none;
+  padding-left: 0px;
+}
+
+.navigator li {
+  display: inline-block;
+  margin: 5px;
+  padding: 5px;
+  font-size: 1.5em;
 }
