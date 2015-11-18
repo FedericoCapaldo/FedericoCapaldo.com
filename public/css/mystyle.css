@@ -1,5 +1,6 @@
 body {
   background-color: #9ae0e0;
+  font-family: sans-serif;
 }
 
 
@@ -7,7 +8,7 @@ body {
   background-image: url("../images/background.png");
   background-size: contain;
   padding: 60px;
-  height: 250px;
+  padding-bottom: 0px;
   text-align: center;
 }
 
@@ -42,11 +43,16 @@ body {
 
 .container {
   padding-top: 20px;
+  margin: auto;
   width: 85%;
 }
 
+.container h3 { 
+  text-align: center; 
+}
 
-@media (min-width: 482px) {
+
+@media (min-width: 548px) {
   .navigator li {
     margin: 5px;
     padding: 5px;
@@ -58,9 +64,11 @@ body {
   }
 
   .container {
-    margin-left: 25%;
-    margin-right: 25%;
     width: 50%;
+  }
+
+  .container h3 {
+    text-align: left;
   }
 }
 
