@@ -8,7 +8,7 @@ app.use(express.static(__dirname + '/public'));
 
 app.locals.myNameTitle = "F Capaldo";
 
-app.get('/', function(req, res){
+app.get('/', function(request, res){
   res.render('default', 
              {title: 'Home'});
 });
