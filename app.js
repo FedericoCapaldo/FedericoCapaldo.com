@@ -8,7 +8,13 @@ app.use(express.static(__dirname + '/public'));
 
 app.locals.myNameTitle = "F Capaldo";
 
-app.get('/', routes.home);
+app.get('/', function(req, res){
+  res.render('default', 
+             {title: 'Home'});
+});
+
+
+// app.get('/', routes.home);
 app.get('/about', routes.about);
 app.get('/projects', routes.projects);
 app.get('/contact', routes.contact);
