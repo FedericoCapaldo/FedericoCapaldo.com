@@ -8,19 +8,14 @@ app.use(express.static(__dirname + '/public'));
 
 app.locals.myNameTitle = "F Capaldo";
 
-app.get('/', function(request, res){
-  res.render('default', 
-             {title: 'Home'});
-});
-
-
-// app.get('/', routes.home);
+app.get('/', routes.home);
 app.get('/about', routes.about);
 app.get('/projects', routes.projects);
 app.get('/contact', routes.contact);
 
 
+var port = process.env.PORT || 3000
+ 
+var server = app.listen(port, function(){
 
-var server = app.listen(3000, function(){
-  console.log("Listening on port 3000");
 });
