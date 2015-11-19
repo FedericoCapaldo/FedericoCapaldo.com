@@ -7,7 +7,9 @@ body {
 .header {
   background-image: url("../images/background.png");
   background-size: contain;
-  padding: 60px;
+  padding-top: 60px;
+  padding-left: 35px;
+  padding-right: 35px;
   padding-bottom: 0px;
   text-align: center;
 }
