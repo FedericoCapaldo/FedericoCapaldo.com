@@ -1,9 +1,14 @@
 {
   "name": "node_my_website",
   "version": "1.0.0",
+  "engines": {
+    "node": "0.12.7",
+    "npm": "2.11.x"
+  }
   "description": "my simple website to present myself",
   "main": "app.js",
   "scripts": {
+    "start": "node app.js",
     "test":  "echo Test Passed"
   },
   "author": "Federico Capaldo",
