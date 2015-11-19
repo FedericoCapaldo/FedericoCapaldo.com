@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "my simple website to present myself",
   "main": "app.js",
+  "scripts": {
+    "test":  "echo Test Passed"
+  },
   "author": "Federico Capaldo",
   "license": "ISC",
   "dependencies": {
