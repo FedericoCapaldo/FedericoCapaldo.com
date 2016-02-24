@@ -2,7 +2,7 @@ var express = require ('express');
 var app = express();
 var routes = require('./routes');
 
-// __dirname == global variable where the app.js file is.
+
 app.set('view engine', 'ejs');
 app.use(express.static(__dirname + '/public'));
 
@@ -15,7 +15,7 @@ app.get('/contact', routes.contact);
 
 
 var port = process.env.PORT || 3000
- 
-var server = app.listen(port, function(){
 
+var server = app.listen(port, function(){
+  console.log('listening on port ' + port);
 });

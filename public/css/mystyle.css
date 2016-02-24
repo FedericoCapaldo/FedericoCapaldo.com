@@ -5,25 +5,27 @@ body {
 
 
 .header {
-  background-image: url("../images/background.png");
-  background-size: contain;
-  padding-top: 60px;
-  padding-left: 35px;
-  padding-right: 35px;
-  padding-bottom: 0px;
-  text-align: center;
+  background-color: #f5eed1;
 }
 
-.header a { 
+.header a {
   text-decoration: none;
+}
+
+.top {
+  margin-left: 10px;
+  display: inline-block;
 }
 
 .top a{
   color: #511f1f;
 }
 
+
 .navigator {
-  margin-top: 10px;
+  margin-right: 10px;
+  float: right;
+  display: inline-block;
 }
 
 .navigator ul{
@@ -44,25 +46,29 @@ body {
 
 
 .container {
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-left: 10px;
   margin: auto;
   width: 85%;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
 }
 
-.container h3 { 
-  text-align: center; 
+.container h3 {
+  text-align: center;
 }
 
 
 @media (min-width: 548px) {
   .navigator li {
     margin: 5px;
-    padding: 5px;
-    font-size: 1.5em;
+    padding: 7px;
+    border: 1px solid #4B0082;
+    border-radius: 4px;
   }
 
   .navigator {
-    margin-top: 50px;
+
   }
 
   .container {
@@ -73,4 +79,3 @@ body {
     text-align: left;
   }
 }
-
