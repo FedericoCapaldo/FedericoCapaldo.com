@@ -6,6 +6,7 @@ body {
 
 .header {
   background-color: #f5eed1;
+  margin-bottom: 20px;
 }
 
 .header a {
@@ -46,7 +47,7 @@ body {
 
 
 .container {
-  padding-top: 15px;
+  padding-top: 5px;
   padding-left: 10px;
   margin: auto;
   width: 85%;
