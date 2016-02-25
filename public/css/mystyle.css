@@ -132,6 +132,13 @@ body {
   text-align: center;
 }
 
+@media (max-width: 399px) {
+  .header .logo {
+    font-size: 1.5em;
+  }
+}
+
+
 @media (min-width: 649px) {
   /* not super happy with this hacky solution*/
   .header-left {
