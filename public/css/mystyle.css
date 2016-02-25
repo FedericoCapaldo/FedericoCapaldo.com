@@ -38,6 +38,8 @@ body {
 
 .header .logo {
   margin: 0px 20px;
+  margin-top: 10px;
+  margin-bottom: -10px;
   display: block;
   font-size: 2em;
   text-decoration: none;
@@ -136,7 +138,7 @@ body {
     height: 58px;
   }
   /*------*/
-  
+
   .header li {
     float: left;
   }
