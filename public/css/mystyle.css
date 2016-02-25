@@ -131,6 +131,12 @@ body {
 }
 
 @media (min-width: 649px) {
+  /* not super happy with this hacky solution*/
+  .header-left {
+    height: 58px;
+  }
+  /*------*/
+  
   .header li {
     float: left;
   }
