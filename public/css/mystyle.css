@@ -124,12 +124,14 @@ body {
   padding-left: 10px;
   margin: auto;
   width: 85%;
-  border-left: 1px solid black;
-  border-right: 1px solid black;
+  border-left: 1px solid black
 }
 
 .container h3 {
+  border-bottom: 1px solid black;
   text-align: center;
+  margin-left: -10px;
+  font-style: italic;
 }
 
 @media (max-width: 399px) {
@@ -165,7 +167,4 @@ body {
     width: 50%;
   }
 
-  .container h3 {
-    text-align: left;
-  }
 }
