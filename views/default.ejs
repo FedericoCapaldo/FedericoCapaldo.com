@@ -6,30 +6,11 @@
 
   <body>
 
-  <% include partials/page/header.ejs %>
-
-    <div class="container">
-      <% if(title == "About me") { %>
-          <h3>About Me</h3>
-      <% } else if (title == "Projects") { %>
-          <h3>Projects</h3>
-          <div class="project">
-            <h4><a href="http://www.chemicaltrace.com">Chemicaltrace</a></h4>
-            <p>Chemical trace website allows you to look up for chemical ingredients inside your cosmentics and understand their level of toxicity.</p>
-          </div>
-      <% } else if (title == "Contact me") { %>
-          <h3> Contact </h3> 
-          <p>the following are my contacts. If you are looking for a web developer or to just to make new intersting connection please get in touch!</p>
-          <p>Email: federicocapaldo@yahoo.com</p>
-          <p>Skype: capaldo.federico</p>
-          <p>Linkedin: <a href="https://uk.linkedin.com/in/federicocapaldo">Federico Capaldo</a></p>
-      <% } else if (title = "Home") { %>
-          <h3>Home</h3>
-          <p>Hi there! I am Federico and this is my website (currently in development).</p>
-          <p>I am a Computer Science Student at King's Collge London! I am doing a lot of activites I am passionate about and soon I'll put everything here online!</p>
-          <br>
-          <p>Stay Tuned!</p>
-      <% } %>
+    <div class="main-parent">
+      <div class="main">
+        <h1> Federico. <h1>
+        <h3> work in progr. <h3>
+      </div>
     </div>
 
   <% include partials/page/footer.ejs %>
