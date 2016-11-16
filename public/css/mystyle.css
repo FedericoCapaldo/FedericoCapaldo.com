@@ -185,3 +185,19 @@ body {
   background-color: black;
   color: #9ae0e0;
 }
+
+
+.my-links {
+  width: 21%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-links ul li{
+  display: inline;
+  padding: 10px;
+}
+
+.my-links a {
+  color: black;
+}
